@@ -1,11 +1,16 @@
 import PropTypes from "prop-types";
+import "./ResetButton.scss";
 
-const ResetButton = ({ resetGame }) => {
-  return <button onClick={resetGame}>Reset</button>;
+const ResetButton = ({ onClick }) => {
+  return (
+    <button className="reset-button" onClick={onClick}>
+      Restart
+    </button>
+  );
 };
 
 ResetButton.propTypes = {
-  resetGame: PropTypes.func.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default ResetButton;

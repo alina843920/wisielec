@@ -1,0 +1,25 @@
+.keyboard {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.keyboard .letter-button {
+  font-size: 2rem;
+  padding: 10px 25px;
+  margin: 10px;
+  background-color: #e683c8;
+  border: 5px solid #71003a;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: #ffffff;
+  }
+}
